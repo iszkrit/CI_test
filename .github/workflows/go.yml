@@ -16,11 +16,8 @@ jobs:
         with:
           go-version: '1.18'
 
-      - name: Move
-        run: cd ut
-
-      - name: List Up
-        run: ls -al
+      - name: Get dependencies
+        run: go get -v -t -d ./...
 
       - name: Build
         run: go build -v ./...
