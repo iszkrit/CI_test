@@ -29,6 +29,13 @@ func TestFizzBuzz(t *testing.T) {
 			},
 			want: []string{"FizzBuzz", "FizzBuzz", "FizzBuzz", "FizzBuzz", "Buzz"},
 		},
+		{
+			name: "UnitTest3",
+			args: args{
+				num: []int{-15},
+			},
+			want: []string{"FizzBuzz"},
+		},
 	}
 
 	for _, tt := range tests {
