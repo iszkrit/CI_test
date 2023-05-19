@@ -16,6 +16,12 @@ jobs:
         with:
           go-version: '1.18'
 
+      - name: List Up
+        run: ls -al
+      
+      - name: Install dependencies
+        run: go get .
+
       - name: Build
         run: go build -v ./ut/...
 
